@@ -9,7 +9,10 @@ public class GoalBallBehavior : MonoBehaviour
 
     public Vector3 offset;
     public Collider GoalCol;
+    //GoalBallMaterial
     public Transform GBM;
+    //DefaultGoalBallMaterial
+    public Material DGBM;
     public Transform carCapture = null;
     public Transform GoalBall;
     public Light lt;
@@ -24,6 +27,11 @@ public class GoalBallBehavior : MonoBehaviour
     {
         //Greift auf die Main des Particle Systems zu
         ParticleSystem.MainModule ma = Flame.main;
+
+        //Setzt das Material auf das Default Material
+        GBM.GetComponent<Renderer>().material = DGBM;
+        lt.color = DGBM.color;
+        Flame.startColor = DGBM.color;
     }
 
     void OnTriggerEnter(Collider GoalCol)
@@ -58,7 +66,7 @@ public class GoalBallBehavior : MonoBehaviour
         //findet das Material des Autos
         Material carMaterial = carCapture.Find("SkyCar").Find("SkyCarBody").GetComponent<Renderer>().material;
         //setzt die Farbe des Balles die Farbe des Autos
-        GBM.GetComponent<Renderer>().material = carMaterial;
+        GBM.GetComponent<Renderer>().material.color = carMaterial.color;
         //Setzt die Farbe des Lichtes die Farbe des Autos
         lt.color = carMaterial.color;
         //Setzt die Farbe der Partikel in die Farbe des Autos
@@ -68,12 +76,12 @@ public class GoalBallBehavior : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-     if(carCapture != null)
-     {
-         //Ball schwebt über Auto
-         transform.position = carCapture.position + offset;
-     }   
+        if(carCapture != null)
+        {
+            //Ball schwebt über Auto
+            transform.position = carCapture.position + offset;
+        }   
     }
 }
