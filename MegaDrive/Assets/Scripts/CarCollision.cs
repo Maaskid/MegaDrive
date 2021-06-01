@@ -7,7 +7,7 @@ public class CarCollision : MonoBehaviour
     void OnCollisionEnter(Collision coll)
     {
         //wenn ein Auto den Ball hält und es ein Auto ist, wird die Collision == carcapture gesetzt
-        if(holdsBall() && isCar(coll.transform))
+        if(isCar(coll.transform) && holdsBall())
          {
              //greift auf die Funktion Follow() aus Ballbehavior zu
              GoalBall.Follow(coll.transform);
