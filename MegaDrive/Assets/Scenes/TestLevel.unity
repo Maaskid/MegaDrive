@@ -557,16 +557,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400054, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0730162
+      objectReference: {fileID: 0}
+    - target: {fileID: 400054, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23
+      value: -0.577
       objectReference: {fileID: 0}
     - target: {fileID: 400054, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.13
+      value: -0.145
+      objectReference: {fileID: 0}
+    - target: {fileID: 400054, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9953877
+      objectReference: {fileID: 0}
+    - target: {fileID: 400054, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.09593419
+      objectReference: {fileID: 0}
+    - target: {fileID: 400054, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400054, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400054, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 11.01
       objectReference: {fileID: 0}
     - target: {fileID: 2300014, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300022, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300024, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
       propertyPath: m_Enabled
@@ -574,7 +602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
       propertyPath: m_Mass
-      value: 100
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
       propertyPath: m_Downforce
@@ -586,7 +614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
       propertyPath: m_BrakeTorque
-      value: 500
+      value: 500000000
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
       propertyPath: m_CarDriveType
@@ -598,7 +626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
       propertyPath: m_FullTorqueOverAllWheels
-      value: 5000
+      value: 500000
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 09d3db1fdf34496438355a2fe94dd1e1, type: 3}
       propertyPath: m_WheelMeshes.Array.data[1]
@@ -3934,7 +3962,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 50b3c90b81d1da847ab787ecfa240fcd, type: 3}
+  - {fileID: 2100000, guid: 6cbabf3ae7918b046bbe631907974187, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
