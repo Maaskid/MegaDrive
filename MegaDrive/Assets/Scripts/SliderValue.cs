@@ -12,9 +12,17 @@ public class SliderValue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SetSliderText(_slider.value);
+
         _slider.onValueChanged.AddListener((v) => {
-                _sliderText.text = v.ToString("0" + "%");
+            SetSliderText(v);
         });
+    }
+
+    void SetSliderText(float v){
+        float percent = (v / ((-1)*_slider.minValue) + 1) * 100;
+        int show_percent = (int)percent;
+        _sliderText.text = (show_percent + "%");
     }
 
 }
