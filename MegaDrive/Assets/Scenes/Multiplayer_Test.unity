@@ -142,6 +142,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4111491025650874197, guid: e1922ee3dbf2dd544bcaf8bb87e295ea,
+        type: 3}
+      propertyPath: GoalBall
+      value: 
+      objectReference: {fileID: 1349492881}
     - target: {fileID: 4810912518991602691, guid: e1922ee3dbf2dd544bcaf8bb87e295ea,
         type: 3}
       propertyPath: m_Name
@@ -286,6 +291,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4441564602973383687, guid: 3df8f2cef7a03184b892fa6df93a93d4,
+        type: 3}
+      propertyPath: GoalCol
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4911943706118330480, guid: 3df8f2cef7a03184b892fa6df93a93d4,
         type: 3}
       propertyPath: m_Name
@@ -348,6 +358,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3df8f2cef7a03184b892fa6df93a93d4, type: 3}
+--- !u!114 &1349492881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4441564602973383687, guid: 3df8f2cef7a03184b892fa6df93a93d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 702940973}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 533c09798a94f8340b5d470295101d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1442973572
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,9 +518,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0.5
-    y: 0.5
+    y: 0
     width: 0.5
-    height: 0.5
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -540,6 +562,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4111491025650874197, guid: e1922ee3dbf2dd544bcaf8bb87e295ea,
+        type: 3}
+      propertyPath: GoalBall
+      value: 
+      objectReference: {fileID: 1349492881}
     - target: {fileID: 4810912518991602691, guid: e1922ee3dbf2dd544bcaf8bb87e295ea,
         type: 3}
       propertyPath: m_Name
@@ -817,9 +844,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.5
+    y: 0
     width: 0.5
-    height: 0.5
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
