@@ -4,6 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes:
   - enabled: 1
     path: Assets/Karting/Scenes/IntroMenu.unity
@@ -17,4 +18,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Karting/Scenes/WinScene.unity
     guid: d6801f2e59f75ee4b919cf5da4e48e3b
+=======
+  m_Scenes: []
+>>>>>>> parent of fbd03a2 (Menus)
   m_configObjects: {}
