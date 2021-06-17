@@ -17,6 +17,8 @@ public class CarCollision : MonoBehaviour
     //prüft ob das Auto den ball hält
     bool holdsBall()
     {
+        Debug.Log("Carcapture: " + GoalBall.name);
+        Debug.Log("this.name: " + this.name);
         return GoalBall.carCapture.name == this.name;
     }
 
