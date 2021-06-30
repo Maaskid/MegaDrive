@@ -19,7 +19,7 @@ public class GoalBallBehavior : MonoBehaviour
     public int Cooldown = 1000;
     public ParticleSystem Flame;
     private float lastUse = 0f;
-
+    public AudioSource audioSource;
 
 
     // Start is called before the first frame update
@@ -72,6 +72,8 @@ public class GoalBallBehavior : MonoBehaviour
         //Setzt die Farbe der Partikel in die Farbe des Autos
         ParticleSystem.MainModule ma = Flame.main;
         ma.startColor = carMaterial.color;
+
+        audioSource.Play();
     }
 
 
