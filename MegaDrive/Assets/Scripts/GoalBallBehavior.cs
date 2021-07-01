@@ -6,7 +6,6 @@ using System.Linq;
 
 public class GoalBallBehavior : MonoBehaviour
 {
-
     public Vector3 offset;
     public Collider GoalCol;
     //GoalBallMaterial
@@ -19,7 +18,7 @@ public class GoalBallBehavior : MonoBehaviour
     public int Cooldown = 1000;
     public ParticleSystem Flame;
     private float lastUse = 0f;
-    public AudioSource audioSource;
+    //public AudioSource audioSource;
 
 
     // Start is called before the first frame update
@@ -73,7 +72,7 @@ public class GoalBallBehavior : MonoBehaviour
         ParticleSystem.MainModule ma = Flame.main;
         ma.startColor = carMaterial.color;
 
-        audioSource.Play();
+        //audioSource.Play();
     }
 
 
