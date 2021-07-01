@@ -1616,6 +1616,10 @@ MonoBehaviour:
   player2: {fileID: 1164649094}
   player3: {fileID: 1678045795}
   player4: {fileID: 403675951}
+  player1Points: {fileID: 1275306094}
+  player2Points: {fileID: 1102398153}
+  player3Points: {fileID: 2139525602}
+  player4Points: {fileID: 211014996}
 --- !u!4 &980613930
 Transform:
   m_ObjectHideFlags: 0
@@ -1642,15 +1646,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e878442274ba3fb42add73b6a394bf5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeModBool: 0
+  timeModBool: 1
   goalBall: {fileID: 1349492881}
   timerText: {fileID: 97679887}
   player1Points: {fileID: 1275306094}
   player2Points: {fileID: 1102398153}
   player3Points: {fileID: 2139525602}
   player4Points: {fileID: 211014996}
-  timeLeft: 5
-  pointsToGet: 5
+  timeLeft: 15
+  pointsToGet: 15
 --- !u!1 &1102398151
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager_PlayerAmount : MonoBehaviour
@@ -14,6 +15,10 @@ public class GameManager_PlayerAmount : MonoBehaviour
     public GameObject player2;
     public GameObject player3;
     public GameObject player4;
+    public TextMeshProUGUI player1Points;
+    public TextMeshProUGUI player2Points;
+    public TextMeshProUGUI player3Points;
+    public TextMeshProUGUI player4Points;
 
     int playerAmount;
 
@@ -40,6 +45,8 @@ public class GameManager_PlayerAmount : MonoBehaviour
                 player2.SetActive(true);
                 playerCamera1.rect = new Rect(0.0f, 0.0f, 0.5f, 1.0f);
                 playerCamera2.rect = new Rect(0.5f, 0.0f, 0.5f, 1.0f);
+                player1Points.enabled = true;
+                player2Points.enabled = true;
                 break;
             case 3:
                 Debug.Log("3 Spieler");
@@ -51,6 +58,9 @@ public class GameManager_PlayerAmount : MonoBehaviour
                 playerCamera2.rect = new Rect(0.5f, 0.5f, 0.5f, 0.5f);
                 playerCamera3.rect = new Rect(0.0f, 0.0f, 0.5f, 0.5f);
                 spectateCamera.enabled = true;
+                player1Points.enabled = true;
+                player2Points.enabled = true;
+                player3Points.enabled = true;
                 break;
             case 4:
                 Debug.Log("4 Spieler");
@@ -63,6 +73,10 @@ public class GameManager_PlayerAmount : MonoBehaviour
                 playerCamera2.rect = new Rect(0.5f, 0.5f, 0.5f, 0.5f);
                 playerCamera3.rect = new Rect(0.0f, 0.0f, 0.5f, 0.5f);
                 playerCamera4.rect = new Rect(0.5f, 0.0f, 0.5f, 0.5f);
+                player1Points.enabled = true;
+                player2Points.enabled = true;
+                player3Points.enabled = true;
+                player4Points.enabled = true;
                 break;
         }
     }
@@ -82,6 +96,10 @@ public class GameManager_PlayerAmount : MonoBehaviour
         player2.SetActive(false);
         player3.SetActive(false);
         player4.SetActive(false);
+        player1Points.enabled = false;
+        player2Points.enabled = false;
+        player3Points.enabled = false;
+        player4Points.enabled = false;
     }
 
 }

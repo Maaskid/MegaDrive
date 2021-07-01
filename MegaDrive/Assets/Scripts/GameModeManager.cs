@@ -20,6 +20,8 @@ public class GameModeManager : MonoBehaviour
     public TextMeshProUGUI player4Points;
     float player4Score = 0;
 
+    bool gameOver = false;
+
     //time Attack
     
     public float timeLeft = 300;
@@ -27,6 +29,7 @@ public class GameModeManager : MonoBehaviour
 
     //point attack
     public float pointsToGet = 300;
+    bool scoreReached = false;
 
     // Start is called before the first frame update
     void Start()
@@ -61,13 +64,8 @@ public class GameModeManager : MonoBehaviour
 
         if(timeLeft > 0){
             timeLeft -= Time.deltaTime;
-        }
-        else{
-            Debug.Log("Game has endet");
-            getWinner();
-        }
 
-        if (goalBall.carCapture.name != null && timeLeft > 0){
+            if (goalBall.carCapture.name != null && timeLeft > 0){
             
             switch(goalBall.carCapture.name){
                 case "Player 1":
@@ -84,11 +82,16 @@ public class GameModeManager : MonoBehaviour
                     break;
             }
         }
+        }
+        else{
+            Debug.Log("Game has endet");
+            getWinner();
+        }
     }
 
     void pointAttackMode(){
         if (goalBall.carCapture.name != null){
-        if(player1Score <= pointsToGet || player2Score <= pointsToGet || player3Score <= pointsToGet || player3Score <= pointsToGet){
+        if(scoreReached == false){
                 switch(goalBall.carCapture.name){
                     case "Player 1":
                         player1Score += Time.deltaTime;
@@ -104,10 +107,10 @@ public class GameModeManager : MonoBehaviour
                         break;
                     }
                 }
-        else{
-            Debug.Log("Game has ended");
-            getWinner();
         }
+        if(player1Score >= pointsToGet || player2Score >= pointsToGet || player3Score >= pointsToGet || player3Score >= pointsToGet && scoreReached == false){
+            scoreReached = true;
+            getWinner();
         }
     }
 
