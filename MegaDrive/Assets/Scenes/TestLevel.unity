@@ -2055,6 +2055,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4810912518991602695, guid: e1922ee3dbf2dd544bcaf8bb87e295ea,
+        type: 3}
+      propertyPath: TurnInputName
+      value: Horizontal1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810912518991602695, guid: e1922ee3dbf2dd544bcaf8bb87e295ea,
+        type: 3}
+      propertyPath: BrakeButtonName
+      value: Brake1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810912518991602695, guid: e1922ee3dbf2dd544bcaf8bb87e295ea,
+        type: 3}
+      propertyPath: AccelerateButtonName
+      value: Accelerate1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4810912518991602713, guid: e1922ee3dbf2dd544bcaf8bb87e295ea, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e1922ee3dbf2dd544bcaf8bb87e295ea, type: 3}
@@ -3166,7 +3181,7 @@ BoxCollider:
   m_GameObject: {fileID: 919132147893593189}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2.9249864, y: 0.034629922, z: 2.9392853}
   m_Center: {x: -0.010347291, y: -0.01728729, z: -0.0032019045}
@@ -4892,6 +4907,7 @@ GameObject:
   - component: {fileID: 2042023227694444479}
   - component: {fileID: 8846872588834498790}
   - component: {fileID: 5321379471990603592}
+  - component: {fileID: 3956586360078393641}
   m_Layer: 0
   m_Name: pPlane1
   m_TagString: Untagged
@@ -4899,6 +4915,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &3956586360078393641
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956586360078393640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7629811779324647873, guid: 50b3c90b81d1da847ab787ecfa240fcd, type: 3}
 --- !u!23 &3978964893586549380
 MeshRenderer:
   m_ObjectHideFlags: 0
