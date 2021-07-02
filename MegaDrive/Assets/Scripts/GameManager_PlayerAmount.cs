@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class GM_PlayerAmount : MonoBehaviour
+public class GameManager_PlayerAmount : MonoBehaviour
 {
 
     public Camera playerCamera1;
@@ -20,6 +20,8 @@ public class GM_PlayerAmount : MonoBehaviour
     public TextMeshProUGUI player3Points;
     public TextMeshProUGUI player4Points;
 
+    int playerAmount;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +35,7 @@ public class GM_PlayerAmount : MonoBehaviour
     }
 
     //Spawnt Spieler abhängig von der Variable 2 bis 4
-    public void PlayerSpawn(int amount){
+    void PlayerSpawn(int amount){
         switch(amount)
         {
             case 2:
@@ -79,6 +81,14 @@ public class GM_PlayerAmount : MonoBehaviour
         }
     }
 
+    void SetPlayerAount(int amount){
+        playerAmount = amount;
+    }
+
+    public void TestFunctions(int amount){
+        SetPlayerAount(amount);
+        PlayerSpawn(playerAmount);
+    }
 
     void DeactivateAllPlayers(){
         spectateCamera.enabled = false;
@@ -92,7 +102,4 @@ public class GM_PlayerAmount : MonoBehaviour
         player4Points.enabled = false;
     }
 
-    public void PlayerAmountFuctionTest(){
-        Debug.Log("PlayerAmount Test");
-    }
 }
