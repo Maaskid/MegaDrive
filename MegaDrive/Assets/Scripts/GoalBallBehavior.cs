@@ -64,7 +64,7 @@ public class GoalBallBehavior : MonoBehaviour
     private void changeColor()
     {
         //findet das Material des Autos
-        Material carMaterial = carCapture.Find("KartVisual").Find("CarBody").GetComponent<Renderer>().material;
+        Material carMaterial = carCapture.Find("KartVisual").Find("CarMaterial").GetComponent<Renderer>().material;
         //setzt die Farbe des Balles die Farbe des Autos
         GBM.GetComponent<Renderer>().material.color = carMaterial.color;
         //Setzt die Farbe des Lichtes die Farbe des Autos
