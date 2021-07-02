@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameModeManager : MonoBehaviour
+public class GM_GameMode : MonoBehaviour
 {
     public bool timeModBool = true;
     public GoalBallBehavior goalBall;
@@ -138,5 +138,18 @@ public class GameModeManager : MonoBehaviour
         else{
             Debug.Log("Player 4 wins");
         }
+    }
+
+    public void setGameModePoints(float i){
+        timeLeft = i;
+        pointsToGet = i;
+    }
+
+    public void setGameModeBool(bool i){
+        timeModBool = i;
+    }
+
+    public void GameModeFuctionTest(){
+        Debug.Log("GameMode Test");
     }
 }
