@@ -863,6 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42922a291df98f4f9236d85d9c5c04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMaterial: {fileID: 0}
 --- !u!1 &4810912519057417293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1363,12 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5141113696693541247, guid: 129aa9342650245cbadf61f8391f3878,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 931974692109100986, guid: fcc71635aab95ff4fbdf1880bf2afa2f,
+        type: 2}
     - target: {fileID: 5141113697866153168, guid: 129aa9342650245cbadf61f8391f3878,
         type: 3}
       propertyPath: m_RootOrder
@@ -1437,6 +1444,12 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5141113698253163166, guid: 129aa9342650245cbadf61f8391f3878,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 931974692109100986, guid: fcc71635aab95ff4fbdf1880bf2afa2f,
+        type: 2}
     - target: {fileID: 5141113698274104284, guid: 129aa9342650245cbadf61f8391f3878,
         type: 3}
       propertyPath: m_Layer
@@ -1447,6 +1460,12 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5141113698274104286, guid: 129aa9342650245cbadf61f8391f3878,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 931974692109100986, guid: fcc71635aab95ff4fbdf1880bf2afa2f,
+        type: 2}
     - target: {fileID: 5603247989726288845, guid: 129aa9342650245cbadf61f8391f3878,
         type: 3}
       propertyPath: m_Layer
@@ -1457,6 +1476,12 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7916209065845860529, guid: 129aa9342650245cbadf61f8391f3878,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 931974692109100986, guid: fcc71635aab95ff4fbdf1880bf2afa2f,
+        type: 2}
     - target: {fileID: 8548943313072018857, guid: 129aa9342650245cbadf61f8391f3878,
         type: 3}
       propertyPath: MaxDistance
