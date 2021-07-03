@@ -41,6 +41,8 @@ public class GM_PlayerAmount : MonoBehaviour
                 DeactivateAllPlayers();
                 player1.SetActive(true);
                 player2.SetActive(true);
+                playerCamera1.enabled = true;
+                playerCamera2.enabled = true;
                 playerCamera1.rect = new Rect(0.0f, 0.0f, 0.5f, 1.0f);
                 playerCamera2.rect = new Rect(0.5f, 0.0f, 0.5f, 1.0f);
                 player1Points.enabled = true;
@@ -52,6 +54,9 @@ public class GM_PlayerAmount : MonoBehaviour
                 player1.SetActive(true);
                 player2.SetActive(true);
                 player3.SetActive(true);
+                playerCamera1.enabled = true;
+                playerCamera2.enabled = true;
+                playerCamera3.enabled = true;
                 playerCamera1.rect = new Rect(0.0f, 0.5f, 0.5f, 0.5f);
                 playerCamera2.rect = new Rect(0.5f, 0.5f, 0.5f, 0.5f);
                 playerCamera3.rect = new Rect(0.0f, 0.0f, 0.5f, 0.5f);
@@ -67,6 +72,10 @@ public class GM_PlayerAmount : MonoBehaviour
                 player2.SetActive(true);
                 player3.SetActive(true);
                 player4.SetActive(true);
+                playerCamera1.enabled = true;
+                playerCamera2.enabled = true;
+                playerCamera3.enabled = true;
+                playerCamera4.enabled = true;
                 playerCamera1.rect = new Rect(0.0f, 0.5f, 0.5f, 0.5f);
                 playerCamera2.rect = new Rect(0.5f, 0.5f, 0.5f, 0.5f);
                 playerCamera3.rect = new Rect(0.0f, 0.0f, 0.5f, 0.5f);
@@ -82,6 +91,10 @@ public class GM_PlayerAmount : MonoBehaviour
 
     void DeactivateAllPlayers(){
         spectateCamera.enabled = false;
+        playerCamera1.enabled = false;
+        playerCamera2.enabled = false;
+        playerCamera3.enabled = false;
+        playerCamera4.enabled = false;
         player1.SetActive(false);
         player2.SetActive(false);
         player3.SetActive(false);
@@ -90,6 +103,7 @@ public class GM_PlayerAmount : MonoBehaviour
         player2Points.enabled = false;
         player3Points.enabled = false;
         player4Points.enabled = false;
+        Debug.Log("Deactivate All!");
     }
 
     public void PlayerAmountFuctionTest(){
