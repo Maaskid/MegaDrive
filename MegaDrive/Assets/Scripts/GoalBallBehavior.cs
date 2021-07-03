@@ -19,6 +19,7 @@ public class GoalBallBehavior : MonoBehaviour
     public int Cooldown = 1000;
     public ParticleSystem Flame;
     private float lastUse = 0f;
+    
     public AudioSource audioSource;
 
 
