@@ -38,11 +38,10 @@ public class GoalBallBehavior : MonoBehaviour
     void OnTriggerEnter(Collider GoalCol)
     {
         //Greift auf die Prefabs zu und nicht auf die Kollisionen
-        Debug.Log(GoalCol);
-        Debug.Log(GoalCol.transform.parent.parent.tag);
-        Debug.Log(GoalBall.tag);
-        Debug.Log("nsakjldn");
-        Follow(GoalCol.transform.parent.parent);
+        if(GoalCol.transform.parent.parent.tag == "Car"){
+            Debug.Log(GoalCol.transform.parent.parent.tag);
+            Follow(GoalCol.transform.parent.parent);
+        }
     }
 
     //bestimmt welches Auto der Ball folgen muss
