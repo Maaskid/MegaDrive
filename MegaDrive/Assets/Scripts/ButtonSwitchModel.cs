@@ -11,7 +11,7 @@ public class ButtonSwitchModel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        self.onClick.AddListener(() => GM_Info.Instance.setPlayerModel(1, boolean));
+        self.onClick.AddListener(() => GM_Info.Instance.setPlayerModel(player, boolean));
     }
 
 }

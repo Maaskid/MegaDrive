@@ -42,21 +42,16 @@ public class GM_Info : MonoBehaviour
     }
 
     public void setPlayerModel(int player, bool plbool){
-                Debug.Log("is drin" + player);
             if(player == 1){
-                Debug.Log("Player1");
                 player1Model = plbool;
             }
             else if(player == 2){
-                Debug.Log("Player2");
                 player2Model = plbool;
             }
             else if(player == 3){
-                Debug.Log("Player3");
                 player3Model = plbool;
             }
-            else if(player == 1){
-                Debug.Log("Player4");
+            else if(player == 4){
                 player4Model = plbool;
             }
             
