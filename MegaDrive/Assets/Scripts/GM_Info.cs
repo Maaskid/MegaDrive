@@ -5,7 +5,7 @@ using UnityEngine;
 public class GM_Info : MonoBehaviour
 {
 
-    public GM_Info Instance;
+    public static GM_Info Instance;
     public int playerAmount = 4;
     //timer oder Punkte Cap
     public float gameValue = 60;
@@ -13,12 +13,14 @@ public class GM_Info : MonoBehaviour
     public bool gameModeBool = true;
 
     private void Awake() {
-        if(Instance == null){
+         if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
             DontDestroyOnLoad(gameObject);
             Instance = this;
-        }
-        else if(Instance != this){
-            Destroy(gameObject);
         }
     }
 

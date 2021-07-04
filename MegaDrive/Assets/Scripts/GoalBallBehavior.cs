@@ -38,6 +38,10 @@ public class GoalBallBehavior : MonoBehaviour
     void OnTriggerEnter(Collider GoalCol)
     {
         //Greift auf die Prefabs zu und nicht auf die Kollisionen
+        Debug.Log(GoalCol);
+        Debug.Log(GoalCol.transform.parent.parent.tag);
+        Debug.Log(GoalBall.tag);
+        Debug.Log("nsakjldn");
         Follow(GoalCol.transform.parent.parent);
     }
 
@@ -45,7 +49,7 @@ public class GoalBallBehavior : MonoBehaviour
     public void Follow(Transform toFollow)
     {
         //beendet die Schleife, wenn der Cooldown nicht abgelaufen ist
-        if(cooldownNotPassed() && toFollow.tag =="Car")
+        if(cooldownNotPassed())
         {
             return;
         }

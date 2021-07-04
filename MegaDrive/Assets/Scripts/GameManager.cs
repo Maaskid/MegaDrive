@@ -20,9 +20,9 @@ public class GameManager : MonoBehaviour
         gameMode.GameModeFuctionTest();
         playerAmount.PlayerAmountFuctionTest();
 
-        playerAmount.PlayerSpawn(GMI.playerAmount);
-        gameMode.setGameModeBool(GMI.gameModeBool);
-        gameMode.setGameModePoints(GMI.gameValue);
+        playerAmount.PlayerSpawn(GM_Info.Instance.playerAmount);
+        gameMode.setGameModeBool(GM_Info.Instance.gameModeBool);
+        gameMode.setGameModePoints(GM_Info.Instance.gameValue);
     }
 
     // Update is called once per frame

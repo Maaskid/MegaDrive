@@ -21,7 +21,7 @@ public class CarCollision : MonoBehaviour
     }
 
     //Prüft, ob das Auto als "Car" getaggt ist
-    bool isCar(Transform toTest)
+    public static bool isCar(Transform toTest)
     {
         return toTest.tag == "Car";
     }
