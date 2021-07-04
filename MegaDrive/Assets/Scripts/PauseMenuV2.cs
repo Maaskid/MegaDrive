@@ -57,7 +57,14 @@ public void DeactivateMenu()
     AudioSource[] audios = FindObjectsOfType<AudioSource>();
 
     foreach (AudioSource a in audios){
+
+        if(a == music){
+
+        }
+        else{
         a.Play();
+        }
+
     }
 
     pauseMenuUI.SetActive(false);

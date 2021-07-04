@@ -116,6 +116,10 @@ public class GM_PlayerAmount : MonoBehaviour
         player2Points.enabled = false;
         player3Points.enabled = false;
         player4Points.enabled = false;
+        score3Text.enabled = false;
+        score3Label.enabled = false;
+        score4Text.enabled = false;
+        score4Label.enabled = false;
         Debug.Log("Deactivate All!");
     }
 
