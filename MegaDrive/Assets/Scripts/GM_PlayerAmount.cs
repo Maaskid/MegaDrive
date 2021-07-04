@@ -20,6 +20,11 @@ public class GM_PlayerAmount : MonoBehaviour
     public TextMeshProUGUI player3Points;
     public TextMeshProUGUI player4Points;
 
+    public TextMeshProUGUI score3Text;
+    public TextMeshProUGUI score3Label;
+    public TextMeshProUGUI score4Text;
+    public TextMeshProUGUI score4Label;
+
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +69,9 @@ public class GM_PlayerAmount : MonoBehaviour
                 player1Points.enabled = true;
                 player2Points.enabled = true;
                 player3Points.enabled = true;
+
+                score3Text.enabled = true;
+                score3Label.enabled = true;
                 break;
             case 4:
                 Debug.Log("4 Spieler");
@@ -84,6 +92,11 @@ public class GM_PlayerAmount : MonoBehaviour
                 player2Points.enabled = true;
                 player3Points.enabled = true;
                 player4Points.enabled = true;
+
+                score3Text.enabled = true;
+                score3Label.enabled = true;
+                score4Text.enabled = true;
+                score4Label.enabled = true;
                 break;
         }
     }

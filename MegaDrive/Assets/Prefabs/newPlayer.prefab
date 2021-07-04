@@ -664,7 +664,6 @@ GameObject:
   - component: {fileID: 4810912518991602695}
   - component: {fileID: 4111491025650874197}
   - component: {fileID: 6107498426828058265}
-  - component: {fileID: 3711061010322564157}
   m_Layer: 2
   m_Name: newPlayer
   m_TagString: Player
@@ -721,10 +720,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    TopSpeed: 15
-    Acceleration: 7
-    ReverseSpeed: 10
-    ReverseAcceleration: 3
+    TopSpeed: 50
+    Acceleration: 14
+    ReverseSpeed: 20
+    ReverseAcceleration: 6
     AccelerationCurve: 0.5
     Braking: 16
     CoastingDrag: 5
@@ -851,19 +850,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 5
   debug: 0
---- !u!114 &3711061010322564157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4810912518991602691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42922a291df98f4f9236d85d9c5c04f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerMaterial: {fileID: 0}
 --- !u!1 &4810912519057417293
 GameObject:
   m_ObjectHideFlags: 0
