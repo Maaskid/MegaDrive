@@ -159,16 +159,10 @@ public class GM_GameMode : MonoBehaviour
         }
         else if(player3Score > player1Score && player3Score > player2Score && player1Score > player4Score){
             winnerText.text = "Player 3 wins!";
-            score3Text.enabled = true;
-            score3Label.enabled = true;
             Debug.Log("Player 3 wins");
         }
         else{
             winnerText.text = "Player 4 wins!";
-            score3Text.enabled = true;
-            score3Label.enabled = true;
-            score4Text.enabled = true;
-            score4Label.enabled = true;
             Debug.Log("Player 4 wins");
         }
     }
