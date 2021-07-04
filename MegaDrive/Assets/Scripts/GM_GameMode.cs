@@ -22,6 +22,17 @@ public class GM_GameMode : MonoBehaviour
 
     bool gameOver = false;
 
+    public TextMeshProUGUI winnerText;
+    public TextMeshProUGUI score1Text;
+    public TextMeshProUGUI score1Label;
+    public TextMeshProUGUI score2Text;
+    public TextMeshProUGUI score2Label;
+    public TextMeshProUGUI score3Text;
+    public TextMeshProUGUI score3Label;
+    public TextMeshProUGUI score4Text;
+    public TextMeshProUGUI score4Label;
+
+
     //time Attack
     
     public float timeLeft = 300;
@@ -31,9 +42,17 @@ public class GM_GameMode : MonoBehaviour
     public float pointsToGet = 300;
     bool scoreReached = false;
 
+    public Material p1M;
+    public Material p2M;
+    public Material p3M;
+    public Material p4M;
+
+    public GameObject winScreen;
+
     // Start is called before the first frame update
     void Start()
     {
+        setColors();
     }
 
     // Update is called once per frame
@@ -85,6 +104,7 @@ public class GM_GameMode : MonoBehaviour
         }
         else{
             Debug.Log("Game has endet");
+            gameOver = true;
             getWinner();
         }
     }
@@ -110,6 +130,7 @@ public class GM_GameMode : MonoBehaviour
         }
         if(player1Score >= pointsToGet || player2Score >= pointsToGet || player3Score >= pointsToGet || player3Score >= pointsToGet && scoreReached == false){
             scoreReached = true;
+            gameOver = true;
             getWinner();
         }
     }
@@ -126,18 +147,55 @@ public class GM_GameMode : MonoBehaviour
     }
 
     void getWinner(){
+        setScore();
+        winScreen.SetActive(true);
         if(player1Score > player2Score && player1Score > player3Score && player1Score > player4Score){
+            winnerText.text = "Player 1 wins!";
             Debug.Log("Player 1 wins");
         }
         else if(player2Score > player1Score && player2Score > player3Score && player2Score > player4Score){
+            winnerText.text = "Player 2 wins!";
             Debug.Log("Player 2 wins");
         }
         else if(player3Score > player1Score && player3Score > player2Score && player1Score > player4Score){
+            winnerText.text = "Player 3 wins!";
+            score3Text.enabled = true;
+            score3Label.enabled = true;
             Debug.Log("Player 3 wins");
         }
         else{
+            winnerText.text = "Player 4 wins!";
+            score3Text.enabled = true;
+            score3Label.enabled = true;
+            score4Text.enabled = true;
+            score4Label.enabled = true;
             Debug.Log("Player 4 wins");
         }
+    }
+
+    void setScore(){
+        score1Text.text = player1Score.ToString("0");
+        score2Text.text = player2Score.ToString("0");
+        score3Text.text = player3Score.ToString("0");
+        score4Text.text = player4Score.ToString("0");
+    }
+
+    void setColors(){
+        player1Points.color = p1M.color;
+        score1Text.color = p1M.color;
+        score1Label.color = p1M.color;
+
+        player2Points.color = p2M.color;
+        score2Text.color = p2M.color;
+        score2Label.color = p2M.color;
+
+        player3Points.color = p3M.color;
+        score3Text.color = p3M.color;
+        score3Label.color = p3M.color;
+
+        player4Points.color = p4M.color;
+        score4Text.color = p4M.color;
+        score4Label.color = p4M.color;
     }
 
     public void setGameModePoints(float i){
