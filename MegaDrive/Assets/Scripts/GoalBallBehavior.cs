@@ -45,7 +45,7 @@ public class GoalBallBehavior : MonoBehaviour
     public void Follow(Transform toFollow)
     {
         //beendet die Schleife, wenn der Cooldown nicht abgelaufen ist
-        if(cooldownNotPassed())
+        if(cooldownNotPassed() && toFollow.tag =="Car")
         {
             return;
         }
