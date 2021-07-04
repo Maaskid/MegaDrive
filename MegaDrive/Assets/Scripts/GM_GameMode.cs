@@ -48,6 +48,7 @@ public class GM_GameMode : MonoBehaviour
     public Material p4M;
 
     public GameObject winScreen;
+    public GameObject scoreScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -149,6 +150,7 @@ public class GM_GameMode : MonoBehaviour
     void getWinner(){
         setScore();
         winScreen.SetActive(true);
+        scoreScreen.SetActive(false);
         if(player1Score > player2Score && player1Score > player3Score && player1Score > player4Score){
             winnerText.text = "Player 1 wins!";
             Debug.Log("Player 1 wins");
@@ -161,9 +163,12 @@ public class GM_GameMode : MonoBehaviour
             winnerText.text = "Player 3 wins!";
             Debug.Log("Player 3 wins");
         }
-        else{
+        else if(player4Score > player1Score && player4Score > player2Score && player4Score > player3Score){
             winnerText.text = "Player 4 wins!";
             Debug.Log("Player 4 wins");
+        }
+        else{
+            winnerText.text = "Game Over!";
         }
     }
 
