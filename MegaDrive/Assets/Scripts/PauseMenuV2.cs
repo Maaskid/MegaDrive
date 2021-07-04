@@ -46,7 +46,7 @@ public void DeactivateMenu()
 
 public void ToMenuGame()
  {
-     SceneManager.LoadScene(0);
+     SceneManager.LoadSceneAsync(1);
  }
 
  public void QuitGame ()
