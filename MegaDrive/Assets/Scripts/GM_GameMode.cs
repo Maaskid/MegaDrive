@@ -20,7 +20,7 @@ public class GM_GameMode : MonoBehaviour
     public TextMeshProUGUI player4Points;
     float player4Score = 0;
 
-    bool gameOver = false;
+    public bool gameOver = false;
 
     public TextMeshProUGUI winnerText;
     public TextMeshProUGUI score1Text;
