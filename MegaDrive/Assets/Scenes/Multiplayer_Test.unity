@@ -2293,6 +2293,7 @@ MonoBehaviour:
   player2Points: {fileID: 1102398153}
   player3Points: {fileID: 2139525602}
   player4Points: {fileID: 211014996}
+  gameOver: 0
   winnerText: {fileID: 1293063505}
   score1Text: {fileID: 816476280}
   score1Label: {fileID: 2043407428}
@@ -2500,6 +2501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1812602886}
   isPaused: 0
+  GM: {fileID: 980613931}
 --- !u!4 &1128131124
 Transform:
   m_ObjectHideFlags: 0
