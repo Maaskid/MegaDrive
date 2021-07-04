@@ -25,6 +25,3 @@ https://engfto.com/index/retrowave_logo_generator_text_effect/0-71
 
 Ferrari icon:
 https://icons8.de/icon/38731/ferrari-emblem
-
-VHSGlitch:
-https://github.com/staffantan/unity-vhsglitch
