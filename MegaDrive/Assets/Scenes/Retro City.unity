@@ -1690,6 +1690,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 6397928850976077375, guid: b284f6113b2b03148904855a5200bb0a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b284f6113b2b03148904855a5200bb0a, type: 3}
 --- !u!1001 &1210397968
@@ -16256,6 +16261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 934544701}
   isPaused: 0
+  music: {fileID: 1856472988}
   GM: {fileID: 7506598652115944625}
 --- !u!4 &7506598651456853422
 Transform:

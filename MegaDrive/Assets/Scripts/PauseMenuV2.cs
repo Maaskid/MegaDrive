@@ -8,6 +8,7 @@ public class PauseMenuV2 : MonoBehaviour
 
 [SerializeField] private GameObject pauseMenuUI;
 [SerializeField] private bool isPaused;
+public AudioSource music;
 public GM_GameMode GM;
 
 private void Update()
@@ -15,9 +16,13 @@ private void Update()
     if(Input.GetKeyDown(KeyCode.Escape) && GM.gameOver == false)
     {
         isPaused = !isPaused;
-
+        switchStates();
     }
 
+    
+}
+
+void switchStates(){
     if(isPaused && GM.gameOver == false)
     {
         ActivateMenu();
@@ -32,20 +37,36 @@ private void Update()
 void ActivateMenu()
 {
     Time.timeScale = 0;
-    AudioListener.pause = true;
+
+    AudioSource[] audios = FindObjectsOfType<AudioSource>();
+
+    foreach (AudioSource a in audios){
+        a.Pause();
+    }
+    music.Play();
+
     pauseMenuUI.SetActive(true);
+    isPaused = true;
 }
 
 public void DeactivateMenu()
 {
+
     Time.timeScale = 1;
-    AudioListener.pause = false;
+
+    AudioSource[] audios = FindObjectsOfType<AudioSource>();
+
+    foreach (AudioSource a in audios){
+        a.Play();
+    }
+
     pauseMenuUI.SetActive(false);
     isPaused = false;
 }
 
 public void ToMenuGame()
  {
+     DeactivateMenu();
      SceneManager.LoadSceneAsync(0);
  }
 
