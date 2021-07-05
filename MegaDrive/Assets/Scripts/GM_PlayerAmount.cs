@@ -19,6 +19,8 @@ public class GM_PlayerAmount : MonoBehaviour
     public TextMeshProUGUI player2Points;
     public TextMeshProUGUI player3Points;
     public TextMeshProUGUI player4Points;
+    public GameObject player3ScoreObject;
+    public GameObject player4ScoreObject;
 
     public TextMeshProUGUI score3Text;
     public TextMeshProUGUI score3Label;
@@ -72,6 +74,8 @@ public class GM_PlayerAmount : MonoBehaviour
 
                 score3Text.enabled = true;
                 score3Label.enabled = true;
+                
+                player3ScoreObject.SetActive(true);
                 break;
             case 4:
                 Debug.Log("4 Spieler");
@@ -97,6 +101,9 @@ public class GM_PlayerAmount : MonoBehaviour
                 score3Label.enabled = true;
                 score4Text.enabled = true;
                 score4Label.enabled = true;
+
+                player3ScoreObject.SetActive(true);
+                player4ScoreObject.SetActive(true);
                 break;
         }
     }
@@ -121,6 +128,8 @@ public class GM_PlayerAmount : MonoBehaviour
         score4Text.enabled = false;
         score4Label.enabled = false;
         Debug.Log("Deactivate All!");
+        player3ScoreObject.SetActive(false);
+        player4ScoreObject.SetActive(false);
     }
 
     public void PlayerAmountFuctionTest(){

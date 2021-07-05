@@ -2083,6 +2083,8 @@ MonoBehaviour:
   player2Points: {fileID: 1840719215599971103}
   player3Points: {fileID: 1840719216641161268}
   player4Points: {fileID: 1840719214713044098}
+  player3ScoreObject: {fileID: 8189593527873237751}
+  player4ScoreObject: {fileID: 8189593527935662612}
   score3Text: {fileID: 1840719215021904972}
   score3Label: {fileID: 1840719215449301256}
   score4Text: {fileID: 1840719215395629734}
