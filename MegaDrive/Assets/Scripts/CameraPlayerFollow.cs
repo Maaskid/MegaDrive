@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using EZCameraShake;
 public class CameraPlayerFollow : MonoBehaviour
 {
     public Transform Player;

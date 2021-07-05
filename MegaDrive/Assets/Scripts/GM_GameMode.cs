@@ -190,6 +190,8 @@ public class GM_GameMode : MonoBehaviour
         CP3.a = 255f;
         CP4.a = 255f;
 
+        timerText.colorGradient = new VertexGradient(CP1, CP2, CP3, CP4);
+
         player1Points.color = CP1;
         score1Text.color = CP1;
         score1Label.color = CP1;
