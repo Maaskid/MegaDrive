@@ -180,21 +180,31 @@ public class GM_GameMode : MonoBehaviour
     }
 
     void setColors(){
-        player1Points.color = p1M.color;
-        score1Text.color = p1M.color;
-        score1Label.color = p1M.color;
+        Color CP1 = p1M.color;
+        Color CP2 = p2M.color;
+        Color CP3 = p3M.color;
+        Color CP4 = p4M.color;
 
-        player2Points.color = p2M.color;
-        score2Text.color = p2M.color;
-        score2Label.color = p2M.color;
+        CP1.a = 255f;
+        CP2.a = 255f;
+        CP3.a = 255f;
+        CP4.a = 255f;
 
-        player3Points.color = p3M.color;
-        score3Text.color = p3M.color;
-        score3Label.color = p3M.color;
+        player1Points.color = CP1;
+        score1Text.color = CP1;
+        score1Label.color = CP1;
 
-        player4Points.color = p4M.color;
-        score4Text.color = p4M.color;
-        score4Label.color = p4M.color;
+        player2Points.color = CP2;
+        score2Text.color = CP2;
+        score2Label.color = CP2;
+
+        player3Points.color = CP3;
+        score3Text.color = CP3;
+        score3Label.color = CP3;
+
+        player4Points.color = CP4;
+        score4Text.color = CP4;
+        score4Label.color = CP4;
     }
 
     public void setGameModePoints(float i){
